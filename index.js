@@ -4,6 +4,7 @@ import express from 'express';
 const app = express();
 app.set('view engine', 'ejs');
 app.set('views', 'views');
+// ---- これより上は変更しないでください ----
 
 // クライアントからのリクエストを処理するコード
 app.get('/', (req, res) => {
@@ -12,8 +13,9 @@ app.get('/', (req, res) => {
   });
 });
 
+// ---- これより下は変更しないでください ----
 // サーバを起動するコード
-const port = 3002;
+const port = 3000;
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
